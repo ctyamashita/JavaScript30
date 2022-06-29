@@ -1,0 +1,43 @@
+.canvas {
+  --base:#ffc600;
+  --spacing: 10px;
+  --blur: 0px;
+  --contrast: 100%;
+  --hue: 0deg;
+  --brightness: 0%;
+}
+
+.image > img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter:blur(var(--blur)) contrast(var(--contrast)) hue-rotate(var(--hue)) brightness(var(--brightness));
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.control {
+  margin: 0 20px 24px;
+}
+
+input {
+  width: 100px;
+}
